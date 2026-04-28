@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 TapSnap Info Website
 
-Currently, two official plugins are available:
+**The official informational landing page and portal for the TapSnap game.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+  <p align="center">
+    <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+    <img src="https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  </p>
+</div>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 About This Portal
 
-## Expanding the ESLint configuration
+This repository contains the informational website accompanying **TapSnap**. It acts as the product's digital footprint containing the Privacy Policy, Terms of Service, and a marketing landing page designed to direct users to the application.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+It is built to be lighting-fast and highly responsive, taking advantage of the absolute latest in frontend web tooling like **React 19** and **Tailwind CSS v4**.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Highlights
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Bazinga Fast**: Bundled utilizing Vite v8 for near-instant HMR and optimized production builds.
+- **Modern React**: Utilizing the latest React 19 hooks and paradigms alongside `react-router-dom` for client-side routing.
+- **Beautiful Utility Styles**: Driven strictly by Tailwind CSS v4, resulting in a cohesive design system that mirrors the game's internal aesthetics.
+- **Fully Typed**: End-to-end TypeScript enforcement.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Running Locally
+
+Ready to launch the informational site?
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start the Vite dev server
+npm run dev
+
+# 3. Build for production deployment
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Key Pages
+- **`/`** - Main Landing Page
+- **`/privacy`** - Comprehensive Privacy Policy outlining data usage (SQLite persistence).
+- **`/terms`** - Terms of Service details.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<div align="center">
+  <p><i>Experience TapSnap across all your devices.</i></p>
+</div>
