@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zomato-red: #e23744;
+  --color-zomato-bg: #ffffff;
+  --color-zomato-surface: #f8f8f8;
+  --color-zomato-dark: #3d4152;
+  --color-zomato-muted: #93959f;
+  --color-zomato-border: #e9e9eb;
+}
+
+@layer base {
+  html, body, #root {
+    @apply h-full w-full bg-zomato-bg;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}

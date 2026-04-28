@@ -1,0 +1,23 @@
+# node_modules
+node_modules/
+
+# build directories
+dist/
+dist-ssr/
+
+# Local env files
+.env.local
+.env.*.local
+
+# Editor and OS files
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Custom project folders
+.planning/
+
+# Tauri/Rust compiled files and schemas
+src-tauri/target/
+src-tauri/gen/schemas/
