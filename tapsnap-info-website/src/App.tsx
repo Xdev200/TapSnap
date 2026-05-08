@@ -14,8 +14,8 @@ function App() {
             <Link to="/" className="text-2xl font-black tracking-tight text-zomato-red">TapSnap</Link>
             <nav className="hidden md:flex gap-6 font-medium text-sm">
               <Link to="/" className="hover:text-zomato-red transition-colors">Home</Link>
-              <Link to="/privacy" className="hover:text-zomato-red transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-zomato-red transition-colors">Terms of Use</Link>
+              <Link to="/privacy-policy" className="hover:text-zomato-red transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-zomato-red transition-colors">Terms of Use</Link>
             </nav>
           </div>
         </header>
@@ -24,8 +24,8 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsOfUse />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfUse />} />
           </Routes>
         </main>
 
@@ -37,8 +37,8 @@ function App() {
               <p className="text-sm">Master the timing in our simple reflex challenge.</p>
             </div>
             <div className="flex gap-6 text-sm font-medium">
-              <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Use</Link>
             </div>
           </div>
           <div className="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-white/10 text-center text-xs opacity-60">
